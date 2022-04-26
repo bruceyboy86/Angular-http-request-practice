@@ -1,0 +1,15 @@
+<div class="users">
+  <h1>{{ users.length }} Users</h1>
+  <p>subscribed to an observable</p>
+  <ng-container *ngFor="let user of users">
+    <div class="user">{{ user.name }}</div>
+  </ng-container>
+</div>
+
+<div class="users">
+  <h1>{{ (user$ | async)?.length }} Users</h1>
+  <p>asynchronus call using the httpClient</p>
+  <ng-container *ngFor="let user of user$ | async">
+    <div class="user">{{ user.name }}</div>
+  </ng-container>
+</div>
