@@ -1,3 +1,4 @@
-# node-1ufvp8
+Tutorial:https://youtu.be/4uye597g5Bc
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-1ufvp8)
+http://json2ts.com/
+https://jsonplaceholder.typicode.com/users

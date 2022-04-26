@@ -13,3 +13,16 @@
     <div class="user">{{ user.name }}</div>
   </ng-container>
 </div>
+
+<ng-container *ngIf="user$ | async as users">
+  <div class="users">
+    <h1>{{ users.length }} Users</h1>
+    <p>
+      asynchronus call using the httpClient, though this method only calls the
+      data once.
+    </p>
+    <ng-container *ngFor="let user of users">
+      <div class="user">{{ user.name }}</div>
+    </ng-container>
+  </div>
+</ng-container>
